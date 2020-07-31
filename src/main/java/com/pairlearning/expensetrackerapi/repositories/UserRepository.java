@@ -9,4 +9,6 @@ public interface UserRepository {
     User findByEmailAndPassword(String Email, String Password) throws EtAuthException;
 
     Integer getCountByEmail(String email);
+
+    User findById(Integer  userId);
 }
